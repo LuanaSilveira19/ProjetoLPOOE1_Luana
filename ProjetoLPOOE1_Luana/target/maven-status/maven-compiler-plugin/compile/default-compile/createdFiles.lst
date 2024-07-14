@@ -1,0 +1,13 @@
+br\com\lpoo\projetolpooe1_luana\model\Departamentos.class
+br\com\lpoo\projetolpooe1_luana\model\Empresa.class
+br\com\lpoo\projetolpooe1_luana\model\Funcionarios.class
+br\com\lpoo\projetolpooe1_luana\ProjetoLPOOE1_Luana.class
+br\com\lpoo\projetolpooe1_luana\model\Funcionarios_.class
+br\com\lpoo\projetolpooe1_luana\dao\PersistenciaJPA.class
+br\com\lpoo\projetolpooe1_luana\dao\InterfacePersistencia.class
+br\com\lpoo\projetolpooe1_luana\model\Diretores.class
+br\com\lpoo\projetolpooe1_luana\model\Diretores_.class
+br\com\lpoo\projetolpooe1_luana\model\Pessoas_.class
+br\com\lpoo\projetolpooe1_luana\model\Empresa_.class
+br\com\lpoo\projetolpooe1_luana\model\Departamentos_.class
+br\com\lpoo\projetolpooe1_luana\model\Pessoas.class
