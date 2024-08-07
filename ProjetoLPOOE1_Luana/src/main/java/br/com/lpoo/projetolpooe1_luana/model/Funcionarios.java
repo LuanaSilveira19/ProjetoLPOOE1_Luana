@@ -28,5 +28,5 @@ public class Funcionarios extends Pessoas implements Serializable {
     public void setId(Integer id) {
         this.id = id;
     }
-  
+       
 }

@@ -39,17 +39,17 @@ public abstract class Pessoas implements Serializable {
     @Column(name = "Salario",columnDefinition = "decimal(12,2)")
     private double salario;
     
-    @ManyToOne
+  /*  @ManyToOne//a coluna empresa permanece por conta do trabalho 1, mas os dados ficam nullos agora
     @JoinColumn(name="empresa_id", referencedColumnName = "empresa_id",  foreignKey = @ForeignKey(name = "FK_empresa"))
-    private Empresa empresa;
+    private Empresa empresa;*/
 
-    public Empresa getEmpresa() {
+   /* public Empresa getEmpresa() {
         return empresa;
     }
 
     public void setEmpresa(Empresa empresa) {
         this.empresa = empresa;
-    }
+    }*/
 
     public Integer getId() {
         return id;
@@ -90,6 +90,9 @@ public abstract class Pessoas implements Serializable {
     public void setSalario(double salario) {
         this.salario = salario;
     }
-    
+  @Override
+    public String toString() {
+        return nome;
+    }
     
 }

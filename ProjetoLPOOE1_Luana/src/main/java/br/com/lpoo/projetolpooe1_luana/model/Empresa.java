@@ -28,11 +28,11 @@ public class Empresa implements Serializable{
     @Column(name = "empresa_id")
     private Integer id;
     
-    @OneToMany( mappedBy = "empresa", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)//anotar para explicar
+    @OneToMany( mappedBy = "empresa", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<Departamentos>dep=new ArrayList();
     
-    @OneToMany( mappedBy = "empresa", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)//anotar para explicar
-    private List<Pessoas>p=new ArrayList();
+  /*  @OneToMany( mappedBy = "empresa", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    private List<Pessoas>p=new ArrayList();*/
     
     @Column(nullable = false, length = 100, name = "nome_empresa")
     private String nome;
@@ -49,13 +49,13 @@ public class Empresa implements Serializable{
   @Column(nullable = false, length = 100, name = "email_empresa")
     private String email;
 
-    public List<Pessoas> getP() {
+  /*  public List<Pessoas> getP() {
         return p;
     }
 
     public void setP(List<Pessoas> p) {
         this.p = p;
-    }
+    }*/
 
     public List<Departamentos> getDep() {
         return dep;
@@ -72,13 +72,13 @@ public class Empresa implements Serializable{
                  this.dep.remove(obj);
    }
     
-      public void contrataFuncionario(Pessoas obj){
+   /*   public void contrataFuncionario(Pessoas obj){
                  obj.setEmpresa(this);
                  this.p.add(obj);
    }
     public void demiteFuncionario(Pessoas obj){
                  this.p.remove(obj);
-   }
+   }*/
     public Integer getId() {
         return id;
     }
@@ -127,6 +127,8 @@ public class Empresa implements Serializable{
         this.email = email;
     }
     
-   
-  
+  @Override
+public String toString() {
+    return this.nome;
+}
 }

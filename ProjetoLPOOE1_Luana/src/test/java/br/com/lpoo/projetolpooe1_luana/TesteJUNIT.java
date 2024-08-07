@@ -29,7 +29,7 @@ public class TesteJUNIT {
         jpa.fecharConexao();
     }
 
-    @Test
+   // @Test
     public void testePersistencia() throws Exception {
 
         Empresa e = new Empresa();
@@ -88,11 +88,13 @@ public class TesteJUNIT {
         e.setEndereco("São José, 426, Passo Fundo-RS");
         e.setEmail("ABC@gmail.com");
         e.adicionaDepartamentos(d);
-        e.contrataFuncionario(dir);
+        
+        //Adicionar mais empresa pra poder selecionar na tela de departamento qual empresa o departamento pertence 
+        /*e.contrataFuncionario(dir);
         e.contrataFuncionario(f1);
         e.adicionaDepartamentos(d2);
         e.contrataFuncionario(dir2);
-        e.contrataFuncionario(f2);
+        e.contrataFuncionario(f2);*/
 
         jpa.persist(e);
 

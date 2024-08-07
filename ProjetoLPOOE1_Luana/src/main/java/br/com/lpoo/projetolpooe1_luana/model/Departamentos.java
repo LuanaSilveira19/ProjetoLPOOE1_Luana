@@ -112,7 +112,10 @@ public class Departamentos implements Serializable{
     }
 
     
-    
+    @Override
+    public String toString() {
+        return nome;
+    }
     
     
 }
